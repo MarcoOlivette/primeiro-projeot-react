@@ -5,9 +5,16 @@ import ComParametro from './components/ComParametro'
 import Card from './components/layout/Card'
 import Primeiro from './components/Primeiro'
 import Repeticao from './components/Repetição'
+import Condicional from './components/Condicional'
 
 export default props =>
     <div className="App">
+         <Card titulo="Repetição ">
+            <Repeticao/>
+        </Card>
+        <Card titulo="Condicional ">
+            <Condicional numero={10}/>
+        </Card>
         <Card titulo="Primeiro componente"> 
             <Primeiro />
         </Card>
@@ -23,8 +30,5 @@ export default props =>
         </Card>
         <Card titulo="Com parametro">
             <ComParametro titulo="titulo" subtitulo="subtitulo" />
-        </Card>
-        <Card titulo="Repetição ">
-            <Repeticao/>
         </Card>
     </div>
