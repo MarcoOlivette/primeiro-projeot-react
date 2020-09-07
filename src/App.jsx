@@ -1,3 +1,4 @@
+import './App.css'
 import React from 'react'
 import ComFilhos from './components/ComFilhos'
 import ComParametro from './components/ComParametro'
@@ -5,13 +6,11 @@ import Card from './components/layout/Card'
 import Primeiro from './components/Primeiro'
 
 export default props =>
-    <div>
-
-        <Card titulo="Primeiro componente">
+    <div className="App">
+        <Card titulo="Primeiro componente"> 
             <Primeiro />
         </Card>
-
-        <Card titulo="exercicio X">
+        <Card titulo="Com filhos">
             <ComFilhos>
                 <ul>
                     <li>1</li>
@@ -21,7 +20,7 @@ export default props =>
                 </ul>
             </ComFilhos>
         </Card>
-        <Card titulo="exercicio X">
+        <Card titulo="Com parametro">
             <ComParametro titulo="titulo" subtitulo="subtitulo" />
         </Card>
     </div>
